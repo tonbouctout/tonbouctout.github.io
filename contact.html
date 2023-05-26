@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Portfolio de William BONTRON</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="plugins/custom.css">
+	<link id="theme-style" rel="stylesheet" href="plugins/theme-1.css">
+	<!-- Script -->
+	<script defer src="plugins/all.js"></script>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body class="dark-mode">
+	<header class="header text-center">
+		<div class="force-overflow">
+			<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">William BONTRON</a></h1>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Partie Profile en haut a gauche -->
+				<div id="navigation" class="collapse navbar-collapse flex-column">
+					<div class="profile-section pt-3 pt-lg-0">
+						<img class="profile-image mb-3 rounded-circle mx-auto" src="images/profile.png" alt="image">
+						<ul class="social-list list-inline py-2 mx-auto">
+							<li class="list-inline-item"><a href="https://www.linkedin.com/"><i
+										class="fab fa-linkedin-in fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/"><i
+										class="fab fa-github-alt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://twitter.com/"><i
+										class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://facebook.com/"><i
+										class="fab fa-facebook fa-fw"></i></a></li>
+						</ul>
+						<hr>
+					</div>
+					<!-- Menu Navigation -->
+					<ul class="navbar-nav flex-column text-left">
+						<li class="nav-item active"> <a class="nav-link" href="index.html"><i
+									class="fas fa-user fa-fw mr-2"></i>A propos<span
+									class="sr-only">(current)</span></a></li>
+						<li class="nav-item"> <a class="nav-link" href="projets.html"><i
+									class="fas fa-laptop-code fa-fw mr-2"></i>Mes projets</a></li>
+						<li class="nav-item"> <a class="nav-link" href="contact.html"><i
+									class="fas fa-laptop-code fa-fw mr-2"></i>Contact</a></li>
+						<li class="nav-item"> <a class="nav-link" href="MGCCN.html"><i
+									class="fas fa-envelope-open-text fa-fw mr-2"></i>MGCCN</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="main-wrapper">
+
+		<section class="cta-section theme-bg-light py-5">
+			<div class="container single-col-max-width">
+				<h2 class="heading text-center">Me contacter</h2>
+				<div class="project-intro text-center">
+					<p class="mb-0 lead">Formulaire de contact</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="project px-3 py-5 p-md-5">
+			<div class="container">
+				<div class="project-meta media flex-column flex-md-row p-4 theme-bg-light">
+					<div class="media-body">
+						<div>
+							<form action="form.php" method="POST">
+								<label for="nom">Nom :</label>
+								<input type="text" id="nom" name="nom" required><br><br>
+
+								<label for="email">Email :</label>
+								<input type="email" id="email" name="email" required><br><br>
+
+								<label for="message">Message :</label><br>
+								<textarea id="mess" name="mess" rows="4" cols="50" required></textarea><br><br>
+
+								<label for="pays">Pays :</label>
+								<select id="pays" name="pays">
+									<option value="france">France</option>
+									<option value="espagne">Espagne</option>
+									<option value="Angleterre">Angleterre</option>
+								</select><br><br>
+
+								<label>Préférences :</label><br>
+								<input type="checkbox" id="newsletter" name="newsletter">
+								<label for="newsletter">S'abonner à la newsletter</label><br>
+
+								<label>Vous etes :</label><br>
+								<input type="radio" id="option1" name="options" value="particuliers">
+								<label for="option1">Un particulier</label><br>
+
+								<input type="radio" id="option2" name="options" value="entreprise">
+								<label for="option2">Une entreprise</label><br><br>
+
+								<input type="submit" value="Envoyer">
+							</form>
+
+							<br>
+							<li class="list-inline-item"><a href="https://www.linkedin.com/"><i
+										class="fab fa-linkedin-in fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/"><i
+										class="fab fa-github-alt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://twitter.com/"><i
+										class="fab fa-facebook fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://facebook.com/"><i
+										class="fab fa-twitter fa-fw"></i></a></li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- Javascript -->
+	<script src="plugins/jquery-3.4.1.min.js"></script>
+	<script src="plugins/popper.min.js"></script>
+	<script src="plugins/bootstrap.min.js"></script>
+	<script src="plugins/tiny-slider.js"></script>
+</body>
+</html>
